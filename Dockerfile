@@ -19,8 +19,10 @@ RUN R -e 'install.packages(c("shiny", "shinydashboard", "ggplot2", "dplyr"), \
 
 
 # copy the app directory into the image
-RUN mkdir /srv/shiny-server/shiny
-COPY shiny_app /srv/shiny-server/shiny
+RUN mkdir /srv/shiny-server/shiny1
+COPY visualization_app /srv/shiny-server/shiny1
+RUN mkdir /srv/shiny-server/shiny2
+COPY linktest_app /srv/shiny-server/shiny2
 
 
 # run app

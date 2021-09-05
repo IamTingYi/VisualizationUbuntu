@@ -29,7 +29,8 @@ dashboardPage(skin = "green",
                            menuItem("Pie Chart", tabName = "Pie", icon = icon("chart-pie")),
                            menuItem("Scatter Plot", tabName = "Scatter", icon = icon("spinner"))),
                   menuItem("Practice", tabName = "Practice", icon = icon("edit")),
-                  menuItem("Code", tabName = "Code")
+                  menuItem("Code", tabName = "Code", icon = icon("code")),
+                  menuItem("Link", tabName = "Link", icon = icon("link"))
                 )
               ),
               
@@ -224,8 +225,17 @@ dashboardPage(skin = "green",
                   tabItem(
                     tabName = "Code",
                     htmlOutput("jupyter")
+                  ),
+                  
+                  #### Link Page #####
+                  tabItem(
+                    tabName = "Link",
+                    fluidPage(
+                      div(h1(p("去另一個shiny介面")), style = "color:navy"),
+                      h2(a(href="http://localhost:3838/shiny2/", "按這裡"))
+                      )
+                    )
                   )
                 )
               )
-)
 
