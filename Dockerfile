@@ -23,6 +23,11 @@ RUN mkdir /srv/shiny-server/shiny1
 COPY visualization_app /srv/shiny-server/shiny1
 RUN mkdir /srv/shiny-server/shiny2
 COPY linktest_app /srv/shiny-server/shiny2
+RUN mkdir /srv/shiny-server/login
+COPY loginpage /srv/shiny-server/login
+RUN mkdir /srv/shiny-server/photo
+COPY photo /srv/shiny-server/photo
+COPY index.html /srv/shiny-server/
 
 
 # run app

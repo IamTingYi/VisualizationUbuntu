@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Shiny</title>
+</head>
+<body background="/home/tingyi/桌面/ShinyUbuntu/Visualization/photo/data5.gif">
+  <h1 style="font-size:450%;color:white;text-align:center;text-shadow: 0 0 0.2em #b3d7ff;">登入 Login</h1>
+  <center><img src="/home/tingyi/桌面/ShinyUbuntu/Visualization/photo/stat3.jpg" width="600" height="400"></center>
+  <center><div id="login_frame">
+    <p style="font-size:200%;color:white;"><label class="label_input">帳號： </label>
+    <input type="text" id="username" class="text_field" style="font-size:20px;padding:5px;"/></p>
+    <p style="font-size:200%;color:white;"><label class="label_input">密碼： </label>
+    <input type="text" id="password" class="text_field" style="font-size:20px;padding:5px;"/></p>
+    <div id="login_control">
+      <input type="button" id="btn_login" value="確認" onclick="login()" style="color:#003c80;font-size:180%;border:none;background-color:#b3d7ff;width:250px;"/>
+      <br>
+      <br>
+      <input type="button" value="Shiny1" onclick="location.href='http://localhost:3838/shiny1/'" style="color:#b3d7ff;font-size:180%;border:none;background-color:#003c80;">
+      <input type="button" value="Shiny2" onclick="location.href='http://localhost:3838/shiny2/'" style="color:#b3d7ff;font-size:180%;border:none;background-color:#003c80;">
+    </div>
+  </div></center>
+</body>
+</html>
